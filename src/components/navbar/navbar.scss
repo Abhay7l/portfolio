@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Bungee&family=Dancing+Script&family=Lato:wght@100;300&family=Merriweather&family=Montserrat:ital,wght@0,100;0,400;0,900;1,900&family=Noto+Sans:wght@500&family=Oswald:wght@700&family=Roboto+Slab&family=Rubik:wght@400;500;700;900&family=Sacramento&family=Ubuntu:ital,wght@0,400;1,700&family=Work+Sans:ital,wght@0,900;1,400&display=swap');
+
+
+.navbarBlur{
+    width: 100vw;
+    padding: 0 4px;
+    background-filter:blur(10px);
+    background-color: rgba(3, 3, 3, 0.7) !important;
+    border-bottom: 1px solid rgba(50, 49, 49,0.1);
+    color: white;
+    font-family: 'Lato';
+    & img{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }

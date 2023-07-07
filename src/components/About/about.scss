@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Bungee&family=Dancing+Script&family=Lato:wght@100;300&family=Merriweather&family=Montserrat:ital,wght@0,100;0,200;0,400;0,900;1,900&family=Noto+Sans:wght@500&family=Oswald:wght@700&family=Roboto+Slab&family=Rubik:wght@400;500;700;900&family=Sacramento&family=Ubuntu:ital,wght@0,400;1,700&family=Work+Sans:ital,wght@0,900;1,400&display=swap');
+
+.about {
+    height: 100vh;
+    width: 100vw;
+  //   background: #000000;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  max-width: 100%;
+    backdrop-filter: blur(10px);
+    // background-color: black;
+  // background: #000000; 
+  // background: -webkit-linear-gradient(
+  //   to bottom,
+  //   #434343,
+  //   #000000
+  // );
+  // background: linear-gradient(
+  //   to bottom,
+  //   #434343,
+  //   #000000
+  // ); 
+}
+.aboutMe {
+    h1{
+        // font-size: 80px;
+        font-family: 'Montserrat', sans-serif;
+        color: transparent !important;
+            background-image: url("../../assets/scene.jpg");
+            background-clip: text;
+                background-size: cover;
+            -webkit-background-clip: text;
+    }
+
+}
+.aboutMeImg {
+  & img {
+    object-fit: cover;
+    height: fit-content;
+  }
+}
+
+.content{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+
+
+//   & h1 {
+//     background-image: url("../../assets/scene.jpg");
+//     font-size: 50px;
+//     background-size: cover;
+//     color: transparent !important;
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//   }
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
