@@ -1,5 +1,5 @@
 import { Box ,Stack, useMediaQuery} from "@mui/material"
-import Mount from "../../assets/Pexels.jpg";
+// import Mount from "../../assets/Pexels.jpg";
 import ReactJs from "../../assets/react.png";
 import Js from "../../assets/Js.png";
 import Node from "../../assets/NodeJs.png";

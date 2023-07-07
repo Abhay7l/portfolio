@@ -1,16 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./about.scss"
 import {useMediaQuery} from '@mui/material';
-import BackImag from "../../assets/bcakImg3.jpg";
-import BackImag2 from "../../assets/Mount.jpg";
+// import BackImag from "../../assets/bcakImg3.jpg";
+// import BackImag2 from "../../assets/Mount.jpg";
 import MyImg from "../../assets/MyImg4.png";
 import { Box, Stack } from '@mui/material'
-import Imag from "../../assets/PinkB.png"
-const About = () => {
+// import Imag from "../../assets/PinkB.png"
+const About = ({aboutRef}) => {
     const isSmallScreen = useMediaQuery('(max-width:960px)');
   return (
     !isSmallScreen?<>{
-    <Stack className='about' direction={'row'} gap={4} sx={{                
+    <Stack ref={aboutRef} className='about' direction={'row'} gap={4} sx={{                
 }}>
         
         <Stack className="aboutMe" direction={'column'} 
@@ -55,7 +55,7 @@ const About = () => {
     
     // mobile devices
     <>{
-       <Stack className='about' direction={'column'} sx={{
+       <Stack ref={aboutRef} className='about' direction={'column'} sx={{
         display:'flex',
         height:'100vh',
        }} >

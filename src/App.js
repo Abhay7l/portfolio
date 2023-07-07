@@ -17,6 +17,8 @@ const App = () => {
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
   const profilesRef = useRef(null);
+  const projectsRef = useRef(null);
+  const aboutRef = useRef(null);
   useEffect(()=>{
     const handleScroll = () => (window.scrollY > 50) ? setIsSticky(true) : setIsSticky(false);
     window.addEventListener("scroll",handleScroll);
@@ -24,6 +26,12 @@ const App = () => {
   },[]);
   const scrollToSkills = () => {
     skillsRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToAbout = () => {
+    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToProjects = () => {
+    projectsRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const scrollToContact = () => {
@@ -41,16 +49,17 @@ const App = () => {
       <Navbar.Toggle aria-controls="navbar-collapse" />
       <Navbar.Collapse id="navbar-collapse">
         <Nav className="ml-auto" >
-          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link onClick={scrollToAbout}>About</Nav.Link>
           <Nav.Link onClick={scrollToSkills}>Skills</Nav.Link>
+          <Nav.Link onClick={scrollToProjects}>Projects</Nav.Link>
           <Nav.Link onClick={scrollToProfiles}>Profile</Nav.Link>
           <Nav.Link onClick={scrollToContact}>Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-     <About />
+     <About aboutRef={aboutRef}/>
      <Skill skillsRef={skillsRef}/>
-     <Projects />
+     <Projects projectsRef={projectsRef}/>
      <Profiles profilesRef={profilesRef}/>
      <ContactMe contactRef={contactRef}/>
      </ScrollVisibleWrapper>

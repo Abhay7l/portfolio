@@ -1,8 +1,8 @@
 import { Box, Stack } from "@mui/material";
 import log from "../../assets/Js.png";
-const Projects = () => {
+const Projects = ({projectsRef}) => {
   return (
-    <Box className="projectSection" sx={{ padding: "50px",display: "flex",flexDirection: "column",alignItems: "center",justifyContent: "center",gap:4,width:"100vw",height:"100vh",
+    <Box ref={projectsRef} className="projectSection" sx={{ padding: "50px",display: "flex",flexDirection: "column",alignItems: "center",justifyContent: "center",gap:4,width:"100vw",height:"100vh",
 }}>
         <div
         style={{color: "white",display: "flex",justifyContent: "center",borderBottom: "1px solid white",}}>
@@ -10,7 +10,7 @@ const Projects = () => {
       </div>
       <Stack direction={"row"} sx={{padding:''}} >
         <Box gap={2} sx={{color:'white',display:"flex",justifyContent:"center",alignItems:'center',
-           backgroundColor:'#1a1a2d',
+          //  backgroundColor:'#1a1a2d',
         //    background: "transparent",
         padding:"10px",
            backdropFilter:'blur(10px)',

@@ -41,7 +41,7 @@
 import { useState,useEffect,useRef } from "react";
 import {Nav, Navbar} from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import About from "../About/about";
+// import About from "../About/about";
 import "./navbar.scss"
 import A7 from "../../assets/A7.png"
 const NavBar = () => {
