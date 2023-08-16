@@ -3,7 +3,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import "./contactMe.scss"
 const ContactMe = ({contactRef}) => {
-    const phoneNumber = '+918989284322'
+    const phoneNumber = '8989284322'
     const whatsAppLink = `https://wa.me/${phoneNumber}`; 
     const emailAddress = 'abhaygupta24803@gmail.com';
     const mailtoLink = `mailto:${emailAddress}`;
@@ -41,7 +41,7 @@ const ContactMe = ({contactRef}) => {
     <Box sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
         <WhatsAppIcon style={{fontSize:"100px",color:"green"}}/>
     </Box>
-       <p>Phone : +91 8989294322</p>
+       <p>Phone : +91 8989284322</p>
 </a>
 </div>
     <div class="cardi">

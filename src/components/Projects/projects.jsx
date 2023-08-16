@@ -1,5 +1,5 @@
 import { Box, Stack } from "@mui/material";
-import log from "../../assets/Js.png";
+import log from "../../assets/pexels-photomix-company-97083.jpg"
 const Projects = ({projectsRef}) => {
   return (
     <Box ref={projectsRef} className="projectSection" sx={{ padding: "50px",display: "flex",flexDirection: "column",alignItems: "center",justifyContent: "center",gap:4,width:"100vw",height:"100vh",
@@ -19,7 +19,15 @@ const Projects = ({projectsRef}) => {
            borderRadius:'10px',
         }}>
             <img style={{objectFit:'contain',width:'120px'}} src={log} alt="ajscanokca "/>
-            <p>cjkabs jabflj ancjd ckalsn weg a faf qwefad scsad qwdc ksldncjksnx ckxcaodifwnqnc a cask dcn wqnpifo jqith iqowthoinfjbgabfk nkn laffn oqf q few-i9tu9qw uq94tu2r 80tu wo j</p>
+            <Stack direction={"column"} >
+            <a href="https://github.com/Abhay7l/pgfinder/tree/master">
+            <h2>RoomFinder</h2>
+            </a>
+            <p>Developed a comprehensive web application, RoomFinder, using the MERN stack (MongoDB,
+Express.js, React.js, Node.js), allowing to easily search and find rooms or PGs (paying guest
+accommodations) for rent. The application provides a user-friendly platform for customers to search
+for rooms or PGs based on filters like city , rent-range</p>
+            </Stack>
         </Box>
       </Stack>
     </Box>
